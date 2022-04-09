@@ -2,44 +2,44 @@ separator=false
 separator_block_width=0
 
 [username]
-command=echo ' '$(cat /etc/hostname)' - '$(curl -Ss "https://wttr.in?0&T&Q" | cut -c 16- | head -2 | xargs echo)' '
-background=#717517
+command=echo ' '$(cat /etc/hostname)' ' 
+background=#690015
 color=#8ef774
 interval=once
 
 [music]
 command=python3 ~/.config/dotfiles/scripts/i3blocks/music.py
-background=#0033cc
+background=#754614
 color=#8ef774
 interval=2
 
 [click]
 full_text= || 
 command=playerctl play-pause
-background=#0033cc
+background=#754614
 color=#8ef774
 
 [date]
 command=echo ' '$(date +"%a, %B %d %Y")' '
-background=#042621
+background=#690015
 color=#8ef774
 interval=once
 
 [time]
 command=echo ' '$(date +%T)' '
-background=#17450c
+background=#754614z
 color=#8ef774
 interval=1
 
 [exit]
 full_text= Exit
-background=#e60000
+background=#690015
 color=#8ef774
 command= i3-msg exit
 interval=0
 
 [padding]
 command=echo " "
-background=#e60000
+background=#690015
 color=#8ef774
 interval=once

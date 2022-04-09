@@ -33,7 +33,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+b exec --no-startup-id playerctl play-pause
 bindsym --release $mod+Shift+s exec escrotum -s ss.png && xclip -selection clipboard -t image/png -i ss.png && rm ss.png 
 bindsym $mod+d exec rofi -show drun 
-bindsym $mod+Shift+f exec palemoon 
+bindsym $mod+Shift+f exec librewolf 
+bindsym $mod+Shift+z exec zim
+bindsym $mod+Shift+o exec okular
 
 #default bindings
 bindsym $mod+Return exec urxvt
@@ -171,7 +173,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
 
 bar {
   	font pango: fantasque sans mono  9
